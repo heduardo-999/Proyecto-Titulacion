@@ -7,6 +7,8 @@ import 'package:app_titulacion/pages/calendario_page.dart';
 import 'package:app_titulacion/pages/horarios_page.dart';
 import 'package:app_titulacion/pages/notificaciones_page.dart';
 import 'package:app_titulacion/pages/materias_page.dart';
+import 'package:app_titulacion/pages/saes_page.dart';
+
 
 void main() {
   runApp(MyApp());
@@ -206,6 +208,17 @@ class _MainPageState extends State<MainPage> {
                     Navigator.push(
                       context,
                       MaterialPageRoute(builder: (context) => MateriasPage()),
+                    );
+                  },
+                ),
+                _buildMenuItem(
+                  context,
+                  'Saes',
+                  Icons.login,
+                  () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => Saes()),
                     );
                   },
                 ),
